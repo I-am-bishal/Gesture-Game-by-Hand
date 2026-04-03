@@ -1,0 +1,9 @@
+@echo off
+echo Waking up the AI Gesture Controller...
+start "" ".\.venv\Scripts\python.exe" "main.py"
+
+echo Waiting 5 seconds for the camera to turn on...
+timeout /t 5 /nobreak
+
+echo Starting Racing Engine...
+start "" ".\.venv\Scripts\python.exe" "game.py"
